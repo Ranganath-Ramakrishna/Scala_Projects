@@ -1,0 +1,13 @@
+object HigherOrderExample1 {
+  def main(args:Array[String])
+  {
+    println("Demo of Higer Order Function")
+    myLoop(2,5,addFive)
+    println("-------------")
+    myLoop(2,5,makeDouble)
+  }
+  
+  def myLoop(x:Int, y:Int, compute:Int => Int) : Unit = for ( i <- x to y) println(compute(i))
+  def addFive(i:Int) = i + 5
+  def makeDouble(i:Int) = i + i
+}
