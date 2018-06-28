@@ -1,1 +1,1 @@
-# Scala_Projects
+Repository to store all scala examples
